@@ -1,12 +1,12 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['backbone', 'underscore'], function(Backbone, _) {
+    define(['exoskeleton', 'lodash'], function(Backbone, _) {
       return factory(Backbone, _);
     });
   }
   else if (typeof exports !== 'undefined') {
-    var Backbone = require('backbone');
-    var _ = require('underscore');
+    var Backbone = require('exoskeleton');
+    var _ = require('lodash');
     module.exports = factory(Backbone, _);
   }
   else {
